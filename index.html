@@ -6,140 +6,96 @@
 <title>SK Advertising</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family:Arial;
+    overflow-x:hidden;
 }
 
 /* Navbar */
-nav {
-    background: #111;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
+nav{
+    background:#111;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+nav ul{
+    display:flex;
+    gap:10px;
+    list-style:none;
 }
 
-nav h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    cursor: pointer;
-}
-
-/* Hero Section */
-.hero {
-    background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h2 {
-    font-size: 40px;
-}
-
-.hero p {
-    font-size: 18px;
+/* Hero */
+.hero{
+    background:url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
 }
 
 /* Services */
-.services {
-    padding: 50px;
-    text-align: center;
+.services{
+    padding:20px;
+    text-align:center;
 }
-
-.service-box {
-    display: inline-block;
-    width: 250px;
-    margin: 15px;
-    padding: 20px;
-    background: #f4f4f4;
+.service-box{
+    width:100%;
+    margin:10px 0;
+    padding:15px;
+    background:#eee;
 }
 
 /* Gallery */
-.gallery {
-    padding: 50px;
-    text-align: center;
+.gallery img{
+    width:100%;
+    margin:10px 0;
 }
 
-.gallery img {
-    width: 200px;
-    margin: 10px;
+/* WhatsApp Button */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
 }
-
-/* Contact */
-.contact {
-    background: #111;
-    color: white;
-    padding: 40px;
-    text-align: center;
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
 <nav>
-    <h1>SK Advertising</h1>
-    <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Gallery</li>
-        <li>Contact</li>
-    </ul>
+<h2>SK Advertising</h2>
+<ul>
+<li>Home</li>
+<li>Services</li>
+<li>Gallery</li>
+</ul>
 </nav>
 
-<!-- Hero -->
 <section class="hero">
-    <h2>Creative Poster & Wedding Card Design</h2>
-    <p>Professional Design Services for Every Occasion</p>
+<h2>Creative Poster & Wedding Card Design</h2>
+<p>Professional Design Services</p>
 </section>
 
-<!-- Services -->
 <section class="services">
-    <h2>Our Services</h2>
-
-    <div class="service-box">
-        <h3>Poster Design</h3>
-        <p>Attractive posters for business & events</p>
-    </div>
-
-    <div class="service-box">
-        <h3>Wedding Cards</h3>
-        <p>Beautiful and modern invitation designs</p>
-    </div>
-
-    <div class="service-box">
-        <h3>Flex & Banner</h3>
-        <p>High quality printing design</p>
-    </div>
+<h2>Our Services</h2>
+<div class="service-box">Poster Design</div>
+<div class="service-box">Wedding Card Design</div>
+<div class="service-box">Flex & Banner</div>
 </section>
 
-<!-- Gallery -->
-<section class="gallery">
-    <h2>Our Work</h2>
-    <img src="https://via.placeholder.com/200">
-    <img src="https://via.placeholder.com/200">
-    <img src="https://via.placeholder.com/200">
-</section>
-
-<!-- Contact -->
-<section class="contact">
-    <h2>Contact Us</h2>
-    <p>📞 +91 0000000000</p>
-    <p>📧 skadvertising@gmail.com</p>
-</section>
+<a href="https://wa.me/919876543210" class="whatsapp">📲</a>
 
 </body>
 </html>
