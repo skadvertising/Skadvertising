@@ -6,68 +6,72 @@
 <title>SK Advertising</title>
 
 <style>
-*{
-    box-sizing:border-box;
-}
 body{
     margin:0;
     font-family:Arial;
-    overflow-x:hidden;
 }
 
 /* Navbar */
 nav{
-    background:#111;
-    color:white;
+    background:#000;
+    color:#fff;
     padding:15px;
     display:flex;
     justify-content:space-between;
-    flex-wrap:wrap;
-}
-nav ul{
-    display:flex;
-    gap:10px;
-    list-style:none;
 }
 
 /* Hero */
 .hero{
-    background:url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
-    background-size:cover;
-    background-position:center;
-    color:white;
+    background:#111;
+    color:#fff;
     text-align:center;
     padding:80px 20px;
 }
 
 /* Services */
 .services{
-    padding:20px;
+    padding:30px;
     text-align:center;
 }
 .service-box{
-    width:100%;
-    margin:10px 0;
-    padding:15px;
-    background:#eee;
+    display:inline-block;
+    width:250px;
+    margin:10px;
+    padding:20px;
+    background:#f4f4f4;
 }
 
 /* Gallery */
-.gallery img{
+.gallery{
+    padding:20px;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+.grid img{
     width:100%;
-    margin:10px 0;
+    border-radius:10px;
 }
 
-/* WhatsApp Button */
+/* Contact */
+.contact{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* WhatsApp */
 .whatsapp{
     position:fixed;
     bottom:20px;
     right:20px;
     background:#25D366;
-    color:white;
+    color:#fff;
     padding:15px;
     border-radius:50%;
-    text-decoration:none;
 }
 </style>
 </head>
@@ -76,26 +80,38 @@ nav ul{
 
 <nav>
 <h2>SK Advertising</h2>
-<ul>
-<li>Home</li>
-<li>Services</li>
-<li>Gallery</li>
-</ul>
 </nav>
 
 <section class="hero">
-<h2>Creative Poster & Wedding Card Design</h2>
-<p>Professional Design Services</p>
+<h1>Professional Poster & Wedding Design</h1>
+<p>We create modern and attractive designs</p>
 </section>
 
 <section class="services">
 <h2>Our Services</h2>
 <div class="service-box">Poster Design</div>
-<div class="service-box">Wedding Card Design</div>
-<div class="service-box">Flex & Banner</div>
+<div class="service-box">Wedding Card</div>
+<div class="service-box">Banner/Flex</div>
 </section>
 
-<a href="https://wa.me/919876543210" class="whatsapp">📲</a>
+<section class="gallery">
+<h2>Our Work</h2>
+
+<div class="grid">
+<img src="IMAGE1">
+<img src="IMAGE2">
+<img src="IMAGE3">
+<img src="IMAGE4">
+</div>
+
+</section>
+
+<section class="contact">
+<h2>Contact Us</h2>
+<p>📞 Your Number</p>
+</section>
+
+<a href="https://wa.me/917096250019" class="whatsapp">📲</a>
 
 </body>
 </html>
